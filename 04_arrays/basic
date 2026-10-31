@@ -1,0 +1,18 @@
+Array - collection of items 
+
+array is special type of object in which we use index instead of key
+
+
+array methods --
+
+change array     create new array
+
+. push(): add to end
+. pop(): delete from end & return
+. toString(): converts array to string 
+. concat(): joins multiple arrays & returns result
+. unshift(): add to start
+. slice (): returns a piece of the array
+      slice(startldx, endldx)
+. splice(): change original array (add,remove,replace)
+      splice(startIdx, delCount, newEl1...)

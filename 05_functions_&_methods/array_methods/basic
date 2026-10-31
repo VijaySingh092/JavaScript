@@ -1,0 +1,23 @@
+// Map-
+
+ creates a new array with the result of some operation . the value its callback returns are used to form new array
+
+ arr.map(callbckfnx(value,index,array))
+
+ let newArr = arr.map((val) =>{
+     return val*2;
+ })
+
+
+// filter-
+
+//creates a new array of elements that give true for a condition/filter .
+//eg: all even Elements
+
+// let newArr = arr.filter((val)=>{
+//     return val%2===Object;
+// })
+
+//reduce
+
+// performs some operations & reduces the array to a single value . it returns tgat single value

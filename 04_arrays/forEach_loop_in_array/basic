@@ -1,0 +1,11 @@
+// forEach loop in Array
+
+// arr.forEach (callBackFunction)
+
+// callbackFunction : here, it is a function to execute for each element in the Array
+
+// a callback is a function passed as an argument to another function
+
+// arr.forEach((val) => {
+//     console.log(val);
+// })

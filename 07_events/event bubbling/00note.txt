@@ -1,0 +1,18 @@
+element.addEventListener(event, function, useCapture);
+
+event: The type of event to listen for (like "click", "mouseover", etc.).
+function: The callback function that will be executed when the event occurs.
+useCapture (optional): A boolean value that specifies which phase of event propagation the listener should be triggered in.
+
+The useCapture Parameter:
+If useCapture is false (the default):
+The event listener is triggered during the bubbling phase, which means the event is triggered when it bubbles up from the target element to the root of the document.
+If useCapture is true:
+The event listener is triggered during the capturing phase, which means the event is triggered when it is captured by the ancestor elements before reaching the target element.
+
+
+Bubbling vs Capturing:
+Bubbling Phase (default when useCapture is false):
+The event starts at the target element and bubbles up to its ancestors. This is the default behavior for most events.
+Capturing Phase (when useCapture is true):
+The event starts at the root (document) and travels down to the target element. This is the capturing phase, where parent elements are processed before the target element.

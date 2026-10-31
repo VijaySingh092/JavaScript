@@ -1,0 +1,36 @@
+# EVENTS IN JS -
+
+The change in the state of an object is known as an EVENT
+Events are fired to notify code of "interesting changes" that may affect code execution.
+
+. mouse events(click, double click etc)
+. keyboard events (keypress, keyup, keydown)
+. form events(submit etc)
+. print event & many more
+
+
+# EVENT HANDLING IN JS-
+
+ node.event=() =>{
+    // handle here
+ }
+
+ # EVENT OBJECT-
+
+ It is a special object that has details about the event .
+ All event handlers have access to the Event Object's properties and methods.
+
+node.event=(e) =>{
+    //handle here
+}
+
+e.target,e.type,eclientX,e.clientY
+
+
+# EVENT LISTENERS -
+
+node.addEventsListener(event,callback)
+
+node.removeEventListener(event, callback)
+
+*  NOTE= the callback reference should be same to remove

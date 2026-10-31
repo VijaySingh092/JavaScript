@@ -1,0 +1,15 @@
+operators
+used to perform some operation on data
+.arthematic operators
+.uniary operators
+
+
+
+
+a++ post increment   =  jis line pe increment ho raha hai agar us line ke andar kaam ho raha hai to usme value change nhi hogi value agli line se change hogi
+
+++a pre increment  = phele value change hogi fir kaam hoga
+
+
+
+Addignment operators- to assign value

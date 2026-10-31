@@ -1,0 +1,57 @@
+ ASUNC AWAIT >> PROMISE CHAINS >> CALLBACK HELL
+
+
+ # SYNC IN JS-
+
+ *SYNCHRONOUS -
+ Synchronous means the code runs in a particular sequence of instructions given in the program . Each instruction waits for the previous instruction to complete its execution.
+
+ *ASUNCHRONOUS-
+ Due to sunchronous programming, sometimes imp instructions get blocked due to some previous instructions, which causes a delay in the UI . Asynchronous code execution allows to execute next instructions immediately and doesn't block the flow.
+
+ #CALLBACKS-
+ A callback is a function passed as an argument to another function.
+
+ #CALLBACK HELL-
+
+ Callback Hell : Nested callbacks stacked below one another forming a pyramid structure. (Pyramid of Doom)
+
+ This style of programming becomes difficult to understand & manage.
+
+
+ # PROMISES-
+ Promise is for "eventual" completion of task . It is an object in JS. It is a solution to callback hell.
+
+ let promise = newPromise((resolve, reject)=> {....})
+                                             |  
+                                      ( function with 2 handlers )
+
+* resolve & reject are callbacks provided by JS
+
+STATES IN PROMISE- a js promise object can be :
+ . PENIDNG : the result is undefined 
+ . FULFILLED : the result is a value (fulfilled)     rsolve(result)
+ . REJECTED  : the result is an error object  reject  (error)
+
+ *Promise has state (pending, fulfilled ) & some result (result for resolve & error for reject ).
+
+ *promises-
+
+ .then & .catch()
+
+ promise.then((res)=> {...})     ye function tab hi execute hoga jab promise fulfill hoga
+
+ promise.catch((err)=> {...})   ye function tab execute hoga jab promise reject hoga
+
+
+ # ASYNC - AWAIT-
+  async function always returns a promise.
+
+  async function myFunc(){...}
+
+  await pauses the execution of its surrounding async function until the promise is settled
+
+
+  # IIFE : Immediately Invoked Function Expression
+
+  IIFE is a function that is called immediately as it is defined.

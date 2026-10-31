@@ -1,0 +1,13 @@
+body{
+    text-align: center;
+}
+h1{
+    color: green;
+}
+h2{
+    color:blue
+}
+#geeks{
+    border: 1px solid black;
+    margin: 5px;
+}

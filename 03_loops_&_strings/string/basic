@@ -1,0 +1,17 @@
+strings
+string is a sequence of characters used to reprsent text
+
+
+
+
+
+methods in strings
+these are built in functions to manipulate a string
+
+. str.toUpperCase()   
+. str.toLowerCase()
+. str.trim()               // removes whitespaces
+. str.slice(start,end?)    // returns parts of string
+. str1.concat(str2)        // joins str2 with str1
+. str.charA(idx)           // finds the index of the character
+. str. replace

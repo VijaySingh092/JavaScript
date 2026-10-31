@@ -1,0 +1,108 @@
+The Document Object Model, or DOM, is a critical concept in web development. It serves as the interface between HTML documents and JavaScript, enabling scripts to dynamically access and update the content, structure, and style of a document.
+
+
+
+WINDOW OBJECT -
+The window object represent an open window in a browser. It is browser's object (not Javascript's) $ is automatically created by browser.
+it is a global object with lots of properties & methods.
+
+Window Object: Window Object is object of the browser which is always at top of the hierarchy.  It is like an API that is used to set and access all the properties and methods of the browser. It is automatically created by the browser.
+Document object: When an HTML document is loaded into a window, it becomes a document object. The ‘document’ object has various properties that refer to other objects which allow access to and modification of the content of the web page. If there is a need to access any element in an HTML page, we always start with accessing the ‘document’ object. Document object is property of window object.
+Form Object: It is represented by form tags.
+Link Object: It is represented by link tags.
+Anchor Object: It is represented by a href tags.
+Form Control Elements: Form can have many control elements such as text fields, buttons, radio buttons, checkboxes, etc.
+
+
+
+
+WHAT IS DOM ?
+When a web page is loaded , the browser creates a DOCUMENT OBJECT MODAL (DOM) of the page .
+each individual in the dom tree is known as the node
+there are three types of nodes 1.text node 2.comment node 3.element node
+
+The DOM stands for Document Object Model. It represents the HTML structure of a webpage in a tree-like format, where each node corresponds to an element in the document. This structure allows programming languages like JavaScript to interact with the document in a structured way, manipulating elements, attributes, and content.
+
+
+How and When is the DOM Created?
+The creation of the DOM follows a specific process during the page load:
+
+HTML Loading: The browser first loads the HTML document.
+HTML Parsing: As the browser loads the HTML, it begins parsing it from top to bottom.
+DOM Tree Creation: During parsing, the browser constructs the DOM tree. This tree represents the hierarchical structure of the HTML document.
+
+Structure of the DOM Tree
+The DOM tree starts with the HTML element as the root, which branches out into child nodes such as HEAD and BODY. These child nodes further branch out into their own child nodes, forming a tree structure.
+
+               window 
+                 |
+                 |
+               DOCUMENT
+                 |
+                 |
+                 html
+              |             \
+            head            body
+    |      |      |          |     \
+ meta   title   link        div    script
+                              |         
+                        img h1 p div
+
+
+
+
+DOM manipulation-
+to access elements from our page
+
+
+. selecting with id 
+document.getElementById("myId)
+
+.selecting with class      -  it returns html collection 
+document.getElementByClassName("myClass")
+
+.selecting with tag
+document.getElementsByClassName("p")
+
+.Query selector-
+
+document.querySelector("myId/myClass/tag")
+//returns first element
+
+document.querySelector("")
+
+attributes-
+
+. getAttribute(attr)  - to get the attribute value
+. setAttribute(attr,value)  - to set the attribute val th
+
+style-
+. node.style
+
+
+# INSERT ELEMENTS-    let el= document.createElement("div")
+
+. node.append(el)  //  adds at the end of node (inside)
+. node.prepend(el)  // adds at the start of node(inside)
+. node.before(el)   // adds before the node (outside)
+. node.after(el)   // adds after the node(outside)
+
+# DELETE ELEMENT
+
+. node.remove()    // removes the node
+
+
+
+DOM manipulation  properties-
+
+.tagName : returns tag for element nodes
+.innerText : returns the text content of the element and all its children
+.innerHTML : returns the plain text or HTML contents in the element
+.textContent : returns textual content even for hidden elements
+
+Manipulating the DOM
+JavaScript interacts with the DOM using various methods:
+
+Searching for Elements: Methods like document.getElementById(), document.getElementsByClassName(), and document.querySelector() allow you to select elements in the DOM.
+Modifying Elements: Once an element is selected, its content, attributes, and styles can be changed using properties and methods like innerHTML, setAttribute(), and style.
+Event Handling: Event listeners can be added to DOM elements to respond to user interactions, such as clicks or key presses.

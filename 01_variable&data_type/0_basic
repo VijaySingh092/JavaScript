@@ -1,0 +1,26 @@
+javascript is a programming language . we use to give instrucions to the computer.
+{} these curly brackets are known as block in javascript.
+
+
+variable are containers for data.
+
+.variable names are case sensitive ; "a" & "A" is different.
+. only  a letters , underscore(_) or $ is allowed .(not even space).
+. only  a letters , underscore(_) or $ should be 1st character.
+. reserved words cannot be variable names.
+
+keywords that can be used in front of variables
+
+var: variable can be re-declared & updated . A global scope variable .
+
+let: variable cannot be re-declared but can be updated . A block variable .
+
+const: Variable cannot be re-declared or updated . A block scope variabe.
+
+Datatype--
+
+.non-primitive-
+objects:collection of values
+
+.primitive-
+number, string, boolean, undefined, null, bigInt, symbol  
